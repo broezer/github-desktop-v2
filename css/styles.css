@@ -277,7 +277,44 @@ pre code, pre tt {
     border: none; }
 
 
+
+
+body{
+    padding:0;
+}
+
+header, main{
+    width:60vw;
+    margin:0 auto;
+    position: relative;
+    display: block;
+}
+
+section{
+    position: relative;
+    display: block;
+}
+
 video, img{
-    width:80vw;
     height:auto;
+    width:80%;  
+    box-shadow: 0px 2px 12px #888;
+    margin-left: 12px;
+}
+
+@media only screen and (max-device-width: 812px){
+    header, main{
+        width:80vw;
+        margin:0 auto;
+       
+    }
+    
+    video, img{
+        height:auto;
+        width:90%;    
+        max-width:90%;
+        display: inline-block;
+        
+    }
+
 }
